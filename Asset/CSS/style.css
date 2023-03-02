@@ -147,6 +147,7 @@ section{
     font-weight: 700;
     line-height: 1.1;
     margin: 0 0 8px;
+    color: var(--text-color);
 }
 
 .home-text h3{
@@ -272,7 +273,7 @@ header.sticky{
     box-shadow: 0 2px 6px hsla(0, 0%, 15%, .1);
     border-radius: .25rem;
     position: relative;
-    background-color: rgb(123, 169, 255);
+    background-color: rgb(178, 205, 255);
     transition: all .25s ease;
 }
 
@@ -356,24 +357,6 @@ header.sticky{
     color: var(--first-color);
 }
 
-/* @media screen and (min-width: 576px) {
-    .exp-container{
-        width: 550px;
-        padding: 2.5rem;
-        justify-self: center;
-        border-radius: .75rem;
-    }
-    .acc_header{
-        padding: 1.5rem;
-    }
-    .acc_title{
-        padding-right: 3.5rem;
-    }
-    .acc_description{
-        padding: 0 4rem 1.25rem 3.5rem;
-    }
-} */
-
 @media screen and (min-width: 968px){
     .experince{
         margin-left: auto;
@@ -383,7 +366,7 @@ header.sticky{
 
 /* portfolio */
 .portfolio{
-    background-color: #e1e3ff;
+    background-color: #dfefff;
 }
 
 .portfolio-content{
@@ -685,6 +668,7 @@ form textarea{
     .home-text h1{
         font-size: 2.5rem;
     }
+
     .home{
         height: 87vh;
     }
@@ -697,6 +681,7 @@ form textarea{
 
     .about h1{
         font-size: 32px;
+        color: var(--first-color);
     }
 
     .about-img{
@@ -717,6 +702,12 @@ form textarea{
     #menu-icon{
         display: block;
     }
+
+    .home{
+        background-color: #ede9ee;
+        background-image: none;
+    }
+
     .nav__list{
         position: absolute;
         top: -1000px;
