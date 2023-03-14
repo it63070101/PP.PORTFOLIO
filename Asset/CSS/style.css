@@ -5,16 +5,12 @@
 :root{
     --header-height: 3rem;
 
-    /* HSL Color */
-    --first-color: #e77a2b;
-    --first-color-second:hsl(var(--hue-color), 10, 92);
-    --first-color-alt:hsl(var(--hue-color), 10, 92);
-    --first-color-lighter:hsl(var(--hue-color), 10, 92);
-    --title-color: #2D2677;
+    --first-color: #CDA715;
+    --title-color: #132257;
     --text-color: #000;
-    --text-color-light:hsl(var(--hue-color), 10, 92);
-    --input-color:hsl(var(--hue-color), 10, 92);
-    --body-color: #EDE9E9;
+    --text-color-light: #d3d3fd;
+    --input-color:#BDBDFF;
+    --body-color: #F1F1E6;
     --container-color:#f1f1f1;
 
     /* ============= Font and typography =============== */
@@ -273,7 +269,7 @@ header.sticky{
     box-shadow: 0 2px 6px hsla(0, 0%, 15%, .1);
     border-radius: .25rem;
     position: relative;
-    background-color: rgb(178, 205, 255);
+    background-color: #DC86CE;
     transition: all .25s ease;
 }
 
@@ -285,23 +281,23 @@ header.sticky{
     top:0;
     left: 0;
     border-radius: .25re, 0 0 .25rem;
-    background-color: rgb(139, 130, 118);
+    background-color: #767586;
 }
 
 .acc_item:nth-child(2){
-    background-color: hsl(205, 65%, 70%);
+    background-color: #A86BB3;
 }
 
 .acc_item:nth-child(2)::after{
-    background-color: #44393a;
+    background-color: #767586;
 }
 
 .acc_item:nth-child(3){
-    background-color: hsl(238, 46%, 70%);
+    background-color: #765195;
 }
 
 .acc_item:nth-child(3)::after{
-    background-color: #44393a;
+    background-color: #767586;
 }
 
 .acc_content{
@@ -366,7 +362,7 @@ header.sticky{
 
 /* portfolio */
 .portfolio{
-    background-color: #dfefff;
+    background-color: var(--text-color-light);
 }
 
 .portfolio-content{
@@ -577,7 +573,7 @@ header.sticky{
 }
 
 .contact-text h2{
-    color: #e77a2b;
+    color: var(--title-color);
     font-size: var(--h2-font-size);
     line-height: 1;
 }
@@ -593,7 +589,7 @@ header.sticky{
     height: 45px;
     width: 45px;
     font-size: 22px;
-    background-color: #e77a2b;
+    background-color: var(--title-color);
     color: var(--body-color);
     border-radius: 8px;
     display: inline-flex;
@@ -605,9 +601,9 @@ header.sticky{
 
 .contact-icons i:hover{
     background-color: var(--body-color);
-    color: #e77a2b;
+    color: var(--title-color);
     transform: scale(1.1);
-    border: 1px solid #e77a2b;
+    border: 1px solid var(--title-color);
 }
 
 .contact-form{
@@ -618,7 +614,7 @@ header.sticky{
 form textarea{
     width: 100%;
     padding: 14px;
-    background-color: var(--body-color);
+    background-color: var(--text-color-light);
     color: var(--first-color-lighter);
     border: none;
     border-radius: 8px;
@@ -633,7 +629,7 @@ form textarea{
 .contact-form .submit{
     display: inline-block;
     font-size: 16px;
-    background-color: var(--first-color);
+    background-color: var(--title-color);
     color: #EDE9E9;
     width: 160px;
     transition: all .45s ease;
