@@ -46,29 +46,6 @@ const toggleItem = (item) =>{
     }
 }
 
-// mail
-// var btn = document.querySelector('.submit');
-// btn.addEventListener('click', function(e) {
-//     e.preventDefault()
-//     var name = document.getElementById('name').value;
-//     var mail = document.getElementById('mail').value;
-//     var subject = document.getElementById('subject').value;
-//     var msg = document.getElementById('msg').value;
-//     var body = 'name: ' + name + '<br/> Email: ' + mail + '<br/> Subject' + subject + '<br/> message :'
-//     + msg;
-
-    
-//     Email.send({
-//         SecureToken : "7ee51d45-8278-4ad1-9691-d518fcbd31af",
-//         To : 'psingwisaet@gmail.com',
-//         From : mail,
-//         Subject : subject,
-//         Body : body
-//     }).then(
-//       message => alert('Complete')
-//     );
-// });
-
 function sendMail() {
     var params = {
         name: document.getElementById('name').value,
