@@ -17,23 +17,6 @@ window.onscroll = () => {
     navlist.classList.remove('open');
 };
 
-// Accordian
-const AccordianItems = document.querySelectorAll('.acc_item');
-
-AccordianItems.forEach((item) =>{
-    const AccordianHeader = item.querySelector('.acc_header');
-
-    AccordianHeader.addEventListener('click', () =>{
-        const openItem = document.querySelector('.acc-open');
-
-        toggleItem(item);
-
-        if(openItem && openItem !== item){
-            toggleItem(openItem);
-        }
-    })
-})
-
 const toggleItem = (item) =>{
     const AccordianContent = item.querySelector('.acc_content');
 
@@ -53,8 +36,8 @@ function sendMail() {
         msg: document.getElementById('msg').value,
     };
 
-    const serviceID = "service_2tstjdx";
-    const templateID = "template_e5by24a";
+const serviceID = "service_2tstjdx";
+const templateID = "template_e5by24a";
 
     emailjs.send(serviceID, templateID, params)
     .then(
